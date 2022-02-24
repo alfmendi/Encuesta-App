@@ -1,0 +1,15 @@
+.app__contenedor {
+  height: 100vh;
+  overflow: auto;
+}
+
+/* Esconde el scrollbar para Chrome, Safari y Opera */
+.app__contenedor::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconde el scrollbar para IE, Edge y Firefox */
+.app__contenedor {
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+}

@@ -1,0 +1,154 @@
+.navbarContainer {
+  max-width: 1200px;
+  height: 70px;
+  position: sticky;
+  top: 0; /* Necesario */
+  background: #333;
+  z-index: 20;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLogo h3 {
+  color: #eee;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.navbarMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Enlaces para desktop y tablet */
+.enlaces a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+.enlaces a:hover {
+  color: #fff;
+}
+
+.enlaces a::after {
+  position: absolute;
+  content: "";
+  background: #ff6a95;
+  height: 3px;
+  width: 0px;
+  left: 0px;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.enlaces a:hover::after {
+  width: 100%;
+}
+
+/* Enlaces para móvil */
+.enlacesMovil {
+  position: relative;
+  display: none;
+}
+
+.enlacesMovil svg {
+  cursor: pointer;
+}
+
+.enlacesMovil a {
+  text-decoration: none;
+  color: #222;
+  transition: 0.3s ease-in-out;
+}
+
+.enlacesMovil a:hover {
+  color: #000;
+}
+
+.enlacesMovilMenu {
+  min-width: 100px;
+  z-index: 20;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 30px;
+  right: 0;
+  padding: 5px 15px;
+  background: #e3edf7;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/* Valores para la animación del menú móvil */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* Fin Valores para la animación del menú móvil */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .navbarContainer {
+    padding: 0 20px;
+  }
+
+  .navbarLogo h3 {
+    font-size: 14px;
+  }
+
+  .enlaces {
+    display: none;
+  }
+  .enlacesMovil {
+    display: block;
+  }
+
+  .enlacesMovilMenu {
+    font-size: 10px;
+  }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .enlaces {
+    display: block;
+  }
+  .enlacesMovil {
+    display: none;
+  }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}

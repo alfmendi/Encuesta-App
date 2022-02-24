@@ -1,0 +1,94 @@
+.elementoListaCard {
+  width: 100%;
+  color: #333;
+  margin-top: 25px;
+  position: relative;
+  padding: 30px 20px 10px 20px;
+  margin-bottom: 20px;
+  background: #e3edf7;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  display: flex;
+}
+
+.elementoListaCard p {
+  font-size: 14px;
+}
+
+.elementoListaNota {
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1778f2;
+  background: #e3edf7;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.cerrar,
+.editar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.editar {
+  right: 40px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .elementoListaCard {
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 0px;
+  }
+
+  .elementoListaCard p {
+    font-size: 10px;
+  }
+
+  .elementoListaNota {
+    width: 24px;
+    height: 24px;
+    top: -12px;
+    left: -12px;
+    font-size: 12px;
+  }
+
+  .cerrar,
+  .editar {
+    font-size: 10px;
+    top: 5px;
+    right: 10px;
+  }
+
+  .editar {
+    right: 25px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}

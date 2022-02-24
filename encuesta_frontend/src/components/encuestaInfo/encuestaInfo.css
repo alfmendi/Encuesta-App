@@ -1,0 +1,96 @@
+.infoContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 270px; /* Necesario */
+  background: #e3edf7;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+}
+
+.infoCard {
+  width: 100%;
+  height: 50px;
+  color: #333;
+  margin: 0px 0px 10px 0px;
+  position: relative;
+  padding: 10px 20px;
+  background: #e3edf7;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.infoTotal,
+.infoMedia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infoTotal p,
+.infoMedia p {
+  font-size: 14px;
+}
+
+.infoTotal .valor,
+.infoMedia .valor {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #1778f2;
+  background: #e3edf7;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .infoContainer {
+    top: 210px;
+    padding: 0 20px;
+  }
+
+  .infoCard {
+    padding: 10px;
+    height: 40px;
+  }
+
+  .infoContainer p,
+  .infoTotal .valor,
+  .infoMedia .valor {
+    font-size: 10px;
+  }
+  .infoTotal .valor,
+  .infoMedia .valor {
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}

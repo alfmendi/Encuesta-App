@@ -1,0 +1,33 @@
+# Ficheros / carpetas a ignorar del FRONTEND
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+encuesta_frontend/node_modules
+encuesta_frontend/.pnp
+encuesta_frontend/.pnp.js
+
+# antiguo .gitignore
+encuesta_frontend/.gitignoreFrontend
+
+# testing
+encuesta_frontend/coverage
+
+# production
+encuesta_frontend/build
+
+# misc
+encuesta_frontend/.DS_Store
+encuesta_frontend/.env.local
+encuesta_frontend/.env.development.local
+encuesta_frontend/.env.test.local
+encuesta_frontend/.env.production.local
+
+encuesta_frontend/npm-debug.log*
+encuesta_frontend/yarn-debug.log*
+encuesta_frontend/yarn-error.log*
+
+# Ficheros / carpetas a ignorar del BACKEND
+
+encuesta_backend/node_modules
+encuesta_backend/.env

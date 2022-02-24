@@ -1,0 +1,97 @@
+.header,
+.footer {
+  height: 5vh;
+  background: #333;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  letter-spacing: 2px;
+}
+
+.acercaContainer {
+  max-width: 1200px;
+  height: 90vh;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e3edf7;
+}
+
+.acercaCard {
+  width: 100%;
+  color: #333;
+  padding: 10px 20px;
+  background: #e3edf7;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.acercaCard ul {
+  list-style: none;
+}
+
+.acercaCard p,
+li {
+  color: #666;
+}
+
+.acercaCard li {
+  padding-left: 20px;
+}
+
+.acercaCardBoton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton {
+  font-size: 14px;
+  background: #1778f2;
+  text-decoration: none;
+  color: #eee;
+  border-radius: 3px;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.1),
+    0 4px 5px -2px rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(3, 169, 244, 0.2);
+}
+
+.boton:hover {
+  opacity: 0.9;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .acercaContainer {
+    padding: 0 20px;
+  }
+
+  .header h3 {
+    font-size: 14px;
+  }
+
+  .acercaContainer h3 {
+    font-size: 12px;
+  }
+
+  .acercaContainer p,
+  .acercaContainer li,
+  .acercaContainer a,
+  .footer p {
+    font-size: 10px;
+  }
+}

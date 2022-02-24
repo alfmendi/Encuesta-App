@@ -1,0 +1,84 @@
+.selectorNota {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selectorNota li {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: 0.3s;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.selectorNota li label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectorNota li:hover {
+  background: #ff6a95;
+  color: #fff;
+  border: none;
+}
+
+.selectorNota input[type="radio"] {
+  opacity: 0;
+}
+
+.selectorNota input[type="radio"]:checked ~ label {
+  background: #ff6a95;
+  color: #fff;
+}
+
+.selectorNotaDisabled {
+  pointer-events: none; /* This makes it not clickable */
+  opacity: 0.8; /* This grays it out to look disabled */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .selectorNota li {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+
+  .selectorNota li label {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}
